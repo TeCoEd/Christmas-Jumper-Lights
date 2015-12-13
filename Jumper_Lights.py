@@ -5,10 +5,10 @@ import sys, subprocess, urllib, time, tweepy
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(10, GPIO.OUT)
+GPIO.setup(9, GPIO.OUT)
 
 print ("HELLO, HAPPY CHRISTMAS JUMPER ENGAGED")
-GPIO.setup(10, GPIO.IN)
+GPIO.setup(9, GPIO.IN)
 
 ####TWITTER SECTION###
 # == OAuth Authentication ==###############
@@ -46,7 +46,7 @@ class Crimbo_Lights(tweepy.StreamListener):
 
         if does_the_tweet_contain_key_word == 0:
                 GPIO.setmode(GPIO.BCM)
-                GPIO.setup(10, GPIO.OUT)
+                GPIO.setup(9, GPIO.OUT)
                 pic = '/home/pi/lights.jpg' 
                 user = str(tweet.user.screen_name)              
                 time_sent = time.asctime( time.localtime(time.time()) )
@@ -56,10 +56,10 @@ class Crimbo_Lights(tweepy.StreamListener):
                 #print type(error)
                 api.update_with_media(pic, final_tweet)
                 ###Turn the lights on
-                GPIO.output(10, GPIO.LOW)
+                GPIO.output(9, GPIO.LOW)
                 time.sleep(5)
                 ###Turn them off
-                GPIO.setup(10, GPIO.IN) 
+                GPIO.setup(9, GPIO.IN) 
                 
           
         else:
