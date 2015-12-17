@@ -8,6 +8,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(9, GPIO.OUT)
 
 print ("HELLO, HAPPY CHRISTMAS JUMPER ENGAGED")
+
+time.sleep(15)
 GPIO.setup(9, GPIO.IN)
 
 ####TWITTER SECTION###
