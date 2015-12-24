@@ -61,7 +61,7 @@ class Crimbo_Lights(tweepy.StreamListener):
                 GPIO.output(9, GPIO.LOW)
                 time.sleep(5)
                 ###Turn them off
-                GPIO.setup(9, GPIO.IN) 
+                GPIO.setup(9, GPIO.HIGH) 
                 
           
         else:
