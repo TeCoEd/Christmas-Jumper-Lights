@@ -27,3 +27,5 @@ Save the program and restart the Pi Zero.
 
 Project website: http://www.tecoed.co.uk/crimbo-lights-hack.html
 
+(This has also been adapted to create a LED Hat
+
