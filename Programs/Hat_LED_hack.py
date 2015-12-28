@@ -35,7 +35,7 @@ class Crimbo_Lights(tweepy.StreamListener):
     def on_status(self, tweet):
         
         tweet_to_check = tweet.text ##gets the tweet
-        print tweet_to_check
+        print (tweet_to_check)
         
         ###Checks for tweets to @Your_Twitter_User_ID ###Add Yours
         does_the_tweet_contain_key_word = tweet_to_check.find("@Your_Twitter_User_ID ON")
@@ -63,7 +63,7 @@ class Crimbo_Lights(tweepy.StreamListener):
                               
            
         else:
-                print "no lights"
+                print ("no lights")
                  
 
      
