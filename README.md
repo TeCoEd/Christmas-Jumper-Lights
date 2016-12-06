@@ -1,6 +1,8 @@
 # Christmas Jumper Lights
 # Tweet @PiTests ON to trigger the "XMAS Jumper" to light up in full festive glory.
 
+2016 Upgrade Tweepy sudo pip install Tweepy --upgrade
+
 This hack makes use of:
 - an old Christmas Jumper, 
 - the Raspberry Zero, 
